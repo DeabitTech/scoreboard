@@ -1,6 +1,6 @@
 import { useEffect, useRef, useCallback } from "react";
 
-const randomCalc = (min, max) => Math.floor(Math.random() * (max - min)) + min;
+export const randomCalc = (min, max) => Math.floor(Math.random() * (max - min)) + min;
 
 
 const useRandomScoreInterval = (callback, minDelay, maxDelay) => {

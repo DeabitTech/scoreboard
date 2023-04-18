@@ -1,0 +1,62 @@
+[
+    {
+      "gameId": 0,
+      "startedGame": false,
+      "homeTeam": {
+        "name": "Mexico",
+        "score": 0
+      },
+      "awayTeam": {
+        "name": "Canada",
+        "score": 0
+      }
+    },
+    {
+      "gameId": 1,
+      "startedGame": false,
+      "homeTeam": {
+        "name": "Spain",
+        "score": 0
+      },
+      "awayTeam": {
+        "name": "Brazil",
+        "score": 0
+      }
+    },
+    {
+      "gameId": 2,
+      "startedGame": false,
+      "homeTeam": {
+        "name": "Germany",
+        "score": 0
+      },
+      "awayTeam": {
+        "name": "France",
+        "score": 0
+      }
+    },
+    {
+      "gameId": 3,
+      "startedGame": false,
+      "homeTeam": {
+        "name": "Uruguay",
+        "score": 0
+      },
+      "awayTeam": {
+        "name": "Italy",
+        "score": 0
+      }
+    },
+    {
+      "gameId": 4,
+      "startedGame": false,
+      "homeTeam": {
+        "name": "Argentina",
+        "score": 0
+      },
+      "awayTeam": {
+        "name": "Australia",
+        "score": 0
+      }
+    }
+  ]

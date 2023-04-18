@@ -1,6 +1,6 @@
 # Football World Cup Scoreboard
 
-This implementation simulating the scoreboard of the matches by the interval
+This implementation simulating the scoreboard of the matches by the randomizing interval
 
 ## Stack:
 - React starting from vite 

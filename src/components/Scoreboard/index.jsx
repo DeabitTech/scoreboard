@@ -47,9 +47,10 @@ const Scoreboard = () => {
       return matches.map((match) => match.gameId === matchId ?  
       {
         ...match,
+       
         [teamName]: {
             ...match[teamName],
-            score: match[teamName].score + 1
+            score: match[teamName].score + 1,
         }
       } :  match)
 
@@ -85,10 +86,10 @@ const Scoreboard = () => {
   return (
     <div className='flex flex-col px-8'>
 
-      <h1 className='p-2 text-2xl'>{matches.length>0 &&`Current matches`}</h1>
+      {matches.length>0 && <h1 className='p-2 text-2xl'>{`Current matches`}</h1>}
       <div className='flex flex-row flex-wrap'>
         {matches.map((match)=>{
-          return (<Match key={match.gameId} match={match}/>)
+          return (<Match key={match.gameId} match={match} status={match.startedGame?`Playing`:``}/>)
         })}
       </div>
       {endedMatches.length>  0 &&
@@ -96,7 +97,7 @@ const Scoreboard = () => {
         <h1 className='p-2 text-2xl'>{`Summary`}</h1>
         <div className='flex flex-row flex-wrap'>
           {endedMatches.map((match)=>{
-            return (<Match key={match.gameId} match={match} status={match.startedGame?`Playng`:``}/>)
+            return (<Match key={match.gameId} match={match} />)
           })}
         </div>
       </>
